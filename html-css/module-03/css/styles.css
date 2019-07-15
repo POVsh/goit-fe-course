@@ -1,0 +1,105 @@
+html{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    width: 1200px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 900px;
+}
+
+body h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.main-header {
+    padding: 77px 150px 0px 150px;
+}
+
+.main-menu {
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+.main-menu a {
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;    
+}
+
+
+.main-menu li {
+    display: inline-block;    
+    margin-bottom: 103px;
+}
+
+.main-menu .main-menu-item1 {
+    margin-right: 124px;
+}
+
+.main-menu .main-menu-item2 {
+    margin-right: 106px;
+}
+
+.main-menu .main-menu-item3 {
+    margin-right: 96px;
+}
+
+
+.main-menu-item1 a {
+    color: rgba(3, 169, 244, 1)
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+    line-height: 17px;
+    margin-top: 30px;
+    margin-bottom: 29px;
+}
+
+.main-section button {
+    font-size: 20px;
+}
+.main-section article {
+    display: inline-block;
+    width: 419px;
+}
+.main-section :nth-of-type(2n+1) {
+margin-right: 58px;
+}
+
+.text {
+    margin-top: 34px;
+    margin-bottom: 132px;
+}
+.text-over-button {
+    margin-top: 34px;
+    margin-bottom: 54px;
+}
+.button {
+    display: block;
+    width: 164px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    background-color: #ffffff;
+    border: 1px solid #626262;
+    margin: 0px 380px 71px 360px;
+
+}
