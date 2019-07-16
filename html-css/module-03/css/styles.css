@@ -1,6 +1,12 @@
 html{
     box-sizing: border-box;
 }
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+}
 
 body {
     font-family: "Playfair Display", serif;
@@ -13,6 +19,9 @@ body {
     margin: 0 auto;
     width: 900px;
 }
+.main-section {
+    padding-bottom: 71px;
+}
 
 body h2 {
     margin: 0;
@@ -20,14 +29,19 @@ body h2 {
     font-size: 30px;
     line-height: 36px;
 }
+body p {
+    margin: 0;
+}
 
 .main-header {
-    padding: 77px 150px 0px 150px;
+    padding: 77px 0px 103px 0px;
+    
 }
 
 .main-menu {
     padding: 0px;
     margin: 0;
+    font-size: 0;
     list-style: none;
     text-align: center;
 }
@@ -35,18 +49,18 @@ body h2 {
 
 .main-menu a {
     display: block;
+    font-size: 14px;
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;    
 }
-.main-menu a:hover {
+.main-menu a:hover, a:focus {
     color: #03a9f4;
 }
 
 
 .main-menu li {
     display: inline-block;    
-    margin-bottom: 103px;
 }
 
 .main-menu .main-menu-item1 {
@@ -92,22 +106,16 @@ margin-right: 58px;
 }
 .button {
     display: block;
-    width: 164px;
-    height: 44px;
     font-size: 20px;
     line-height: 24px;
     color: #626262;
     background-color: #ffffff;
     border: 1px solid #626262;
-    margin: 0px 380px 71px 360px;
+    padding: 20px 34px;
+    margin: 0px 380px 0px 360px;
+    cursor: pointer;
 }
 
-.button a {
-    display: block;
-    color: #626262;
-    text-decoration: none;
-    }
-
-.button a:hover {
+.button:hover, .button:focus {
     color: #ff0000;
 }
