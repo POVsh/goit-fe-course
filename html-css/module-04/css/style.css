@@ -200,6 +200,7 @@ padding-bottom: 82px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 82px;
 }
 
 .news-section h2::after {
@@ -208,7 +209,7 @@ padding-bottom: 82px;
     width: 165px;
     height: 8px;
     background-color: rgb(26, 188, 156);
-    margin: 25px auto 82px;
+    margin: 25px auto 0;
     }
 
     .news-article {
