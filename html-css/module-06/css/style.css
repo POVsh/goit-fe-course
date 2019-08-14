@@ -1,0 +1,404 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(153, 153, 153);    
+}
+
+/* HEADER */
+
+.page-header {
+    margin: 0 auto;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 50px; 
+
+}
+.site-logo {            
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(149, 225, 211);
+    line-height: 36px;    
+    text-decoration: none;    
+}
+
+
+.site-menu {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 490px;
+    list-style-type: none;    
+    
+
+}
+.site-menu li {
+    display: block;    
+    text-decoration: none;
+    
+}
+.site-menu a::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    opacity: 0;
+    margin-top: 8px;
+    
+}
+
+
+.site-menu a {
+    display: block;
+    color: rgb(149, 225, 211);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 200ms linear;
+}
+
+.site-menu a:hover, a:focus{
+    color: rgb(243, 129, 129);
+    cursor: pointer;    
+}
+
+.site-menu a:hover::after, a:focus::after {
+    opacity: 1;
+}
+/* MAIN */
+
+/* service-section */
+
+.service-section {
+    padding: 126px 10px 90px;
+}
+
+.service-header{
+    font-size: 30px;
+    line-height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 62px;
+    
+
+}
+
+.service-header span {
+   display: block;
+   font-size: 24px;
+   line-height: 38px;
+   font-family: 'Kaushan Script', cursive;
+   font-weight: normal;   
+   text-transform: none;
+
+}
+.service-header span::first-letter{
+    text-transform: uppercase;
+}
+.service-section h2::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    margin: 33px auto 0;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-content: space-between; 
+    min-height: 229px;  
+    list-style-type: none;
+}
+.service-list-item{
+    display: flex;
+    width: 380px;
+    text-decoration: none;    
+}
+.service-list-item h3{
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-wrapper{
+    width: 300px;
+}
+.service-list-item::before{
+    content: "";    
+    width: 80px;
+    height: 80px;    
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.service-list-item:nth-child(1)::before{
+    background-image: url(../img/ALARM.png);
+}
+.service-list-item:nth-child(2)::before{
+    background-image: url(../img/LINE_GRAPH.png);
+}
+.service-list-item:nth-child(3)::before{
+    background-image: url(../img/COMPUTER.png);
+}
+.service-list-item:nth-child(4)::before{
+    background-image: url(../img/BOOK.png);
+}
+.service-list-item:nth-child(5)::before{
+    background-image: url(../img/HOME.png);
+}
+.service-list-item:nth-child(6)::before{
+    background-image: url(../img/IMAGE.png);
+}
+
+
+/* TEAM SECTION */
+
+.team-section {      
+    padding-bottom: 83px;
+}
+
+.team-section h2 {
+    font-size: 30px;
+    line-height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+
+.team-header span{
+    display: block;
+    font-size: 24px;
+    line-height: 38px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: normal;   
+    text-transform: none;
+}
+.team-header span::first-letter{
+    text-transform: uppercase;
+}
+
+.team-section h2::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: rgb(243, 129, 129);
+    margin: 33px auto 0;
+}
+
+.description {
+    padding: 0 112px;
+    text-align: center; 
+    margin-bottom: 92px;
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.team-list-item {
+    display: block;
+    position: relative;   
+      
+}  
+.img-wrp{
+    position: relative;
+    width: 380px;
+    height: 470px; 
+    background-color: rgb(149, 225, 211);
+    margin-bottom: 27px;
+    
+}
+
+.team-list-item img {
+    transition: transform 0.2s linear;
+}
+
+.team-list-item:hover img, .team-list-item:focus img {
+    transform: translate(-10px, -10px);
+}
+
+.team-list-item:hover .overlay, .team-list-item:focus .overlay {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+}
+   
+      
+
+.overlay {
+    position: absolute;
+    width: 380px;
+    height: 470px;      
+    background-image: linear-gradient(90deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%);
+    opacity: 0;
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    z-index: 1;
+}  
+
+
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 227px;
+    height: 56px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;    
+}
+.icon-item {
+    display: block;    
+    width: 56px;
+    height: 56px;
+}
+
+.icon-item a:hover, .icon-item a:focus {
+    background-color: #95e1d3;
+}
+
+
+.icon-item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;    
+    background-color: rgb(252, 227, 138);   
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.2s linear;
+
+}
+
+
+
+.facebook {
+    background-image: url(../img/facebook.png);
+    
+}
+.twitter {
+    background-image: url(../img/twitter.png);
+
+}
+.pinterest {
+    background-image: url(../img/pinterest.png);
+}
+.instagram {
+    background-image: url(../img/instagram.png); 
+   
+}    
+
+
+.name {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.position {
+    
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(153, 153, 153);
+    text-align: center;
+}
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-top: #cccccc 1px solid;
+    
+    
+}
+.p-footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    line-height: 88px;
+}
+.p-footer span {
+    color: rgb(243, 129, 129);
+}
+.form{   
+    width: 380px;
+    height: 40px;
+    
+}
+.email {  
+    padding: 0 15px; 
+    margin-right: -4px;
+    width: 230px;
+    height: 100%;
+    font-weight: 300 italic;
+    border: #cccccc 1px solid;
+    border-right: none;
+}
+.subscribe {
+    width: 150px;
+    height: 100%;
+    background-color: rgb(149, 225, 211);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    border: #cccccc 1px solid;
+    border-left: none;
+
+}
