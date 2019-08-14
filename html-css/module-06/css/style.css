@@ -375,13 +375,13 @@ body {
     color: rgb(243, 129, 129);
 }
 .form{   
+    display: flex;
     width: 380px;
     height: 40px;
     
 }
 .email {  
-    padding: 0 15px; 
-    margin-right: -4px;
+    padding: 0 15px;     
     width: 230px;
     height: 100%;
     font-weight: 300 italic;
